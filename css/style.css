@@ -1,0 +1,239 @@
+:root{
+    --bs-body-font-family: "Montserrat", sans-serif;
+    --secondary-bg-color:#f7f7f7;}
+body{
+    background-color: #fff; 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--bs-body-font-family);
+    color: black;
+}
+h2,h3 {
+    font-weight: 900;
+    font-size: 40px;
+}
+p{
+    color: #748182;
+}
+.container{
+    width: 75%;
+}
+/*============== Navbar ========= */
+.nav-link{
+    position: relative;
+}
+.nav-item .active::before {
+    content: "";
+    width: 75%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+}
+/*============== Header section========= */
+.home{ 
+    background-image: linear-gradient(#0009,#0009 ), url(../img/bg.jpg);
+    background-size: cover;
+}
+.home .container{
+    padding-top: 68px;
+}
+.home .container h3::after{
+    content: "";
+    animation: typing  10s infinite;
+}
+@keyframes typing {
+    0%,30%{content: "P";}
+    1%,29%{content: "P|";}
+    2%,28%{content: "Ph|";}
+    3%,27%{content: "Pho|";}
+    4%,26%{content: "Phot|";}
+    5%,25%{content: "Photo|";}
+    6%,24%{content: "Photog|";}
+    7%,23%{content: "Photogr|";}
+    8%,21%{content: "Photogra|";}
+    9%,20%{content: "Photograp|";}
+    10%,19%{content: "Photograph|";}
+    11%,18%{content: "Photographe|";}
+    12%{content: "Photographer|";}
+    17%{content: "Photographer|";}
+    
+    30%{content: "D|";}
+    31%,46%{content: "De|";}
+    32%,45%{content: "Des|";}
+    33%,44%{content: "Desi|";}
+    34%,43%{content: "Desig|";}
+    35%,42%{content: "Design|";}
+    36%,41%{content: "Designe|";}
+    37%{content: "Designer|";}
+    40%{content: "Designer|";}
+
+    47%,65%{content: "Dev|";}
+    48%,64%{content: "Deve|";}
+    49%,63%{content: "Devel|";}
+    50%,62%{content: "Develo|";}
+    51%,61%{content: "Develop|";}
+    52%,60%{content: "Develope|";}
+    53%,59%{content: "Developer|";}
+    58%{content: "Developer|";}
+    66%{content: "De|";}
+    67%{content: "D|";}
+
+    68%,100%{content: "F|";}
+    69%,99%{content: "Fr|";}
+    70%,98%{content: "Free|";}
+    71%,97%{content: "Freel|";}
+    72%,96%{content: "Freela|";}
+    73%,95%{content: "Freelan|";}
+    74%,94%{content: "Freelanc|";}
+    75%,93%{content: "Freelance|";}
+    76%,92%{content: "Freelancer|";}
+    91%{content: "Freelancer|";}
+}
+.home .social-icon  i{
+    width: 40px;
+    height: 40px;
+    color: white;
+    padding-top: 12px;
+}
+.home .social-icon a{
+    text-decoration: none;
+}
+/*============== End Header section========= */
+/*==============  About section========= */
+  .btn-outline-download {
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-bg: black;
+  }
+  .btn-outline-contact {
+    --bs-btn-color: black;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: black;
+    --bs-btn-bg: white;
+  }
+/*============== End About section========= */
+/*==============  Service section========= */
+.service{
+    background-color: var(--secondary-bg-color);
+}
+.service .icon{
+    width: 4rem;
+    height: 4rem;
+    background-color:var(--secondary-bg-color);
+    border: var(--secondary-bg-color) !important;
+    transition: all 0.5s;
+}
+.service .item:hover .icon{
+ background-color: black;
+ color: white;
+ border: white;
+}
+/*============== End Service section========= */
+/*============== works section========= */
+.fit-content{
+    width: fit-content;
+}
+.nav-pills .nav-link{
+    color: black ;
+}
+.nav-pills .nav-link.active{
+    background-color:black !important;
+}
+.works .inner:hover .layer{
+    opacity: 80% !important;
+    width: 95% !important;
+    height: 95% !important;
+    top: 8px !important;
+    left: 9px !important;
+    transition: all 0.5s;
+}
+/*============== End works section========= */
+/*============== Clients section========= */
+.clients .part1{
+    background-color: var(--secondary-bg-color);
+}
+.clients .img-carosel{
+    width: 100px;
+    height: 100px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border: #748182;
+    border-radius: 50%;
+    background-color: #748182;
+    margin: 7px;
+}
+/*============== End Clients section========= */
+/*==============  Team section========= */
+.team{
+    background-color: var(--secondary-bg-color);
+}
+.team .list-inline li i{
+    width: 45px ;
+    height: 45px ;
+}
+.team .team-members img{
+    transition: all 0.5s;
+}
+.team .team-members:hover img{
+    scale: 1.5;
+}
+.team .team-members .layer-img{
+   transition: all 0.5s;
+}
+.team .team-members:hover .layer-img{
+    transform: rotate(360deg);
+    opacity: 75% !important;
+}
+.team .list-inline i{
+transition: all 0.3s;
+}
+.team .list-inline li a:hover i{
+    color: black !important;
+    background-color: white !important; 
+}
+/*============== End Team section========= */
+/*==============  Contact section========= */
+.contact .icon i{
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    padding-top: 20px !important;
+    background-color: #f4f4f4;;
+}
+.contact .container{
+    width: 65%;
+}
+.contact .icon i{
+    transition: all 0.5s;
+}
+.contact .item:hover i{
+    background-color: black;
+    color: white !important;
+}
+.form-control {
+    background-color:#f4f4f4 ;
+    border: none;
+}
+.form-control:focus {
+    background-color:#f4f4f4 ;
+    box-shadow: none;
+ }
+ .contact textarea{
+    max-height: 300px;
+    min-height: 150px;
+ }
+/*============== End Contact section========= */
+
+
